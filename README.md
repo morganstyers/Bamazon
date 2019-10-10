@@ -5,8 +5,8 @@ Using node, mysql and inquirer.js, we can create, delete, update and edit a stor
 watch its stock, sell, troubleshoot, retain info and keep up with supply and demand all in one interface.
 
 Upon opening Bamazon, the app will ask your name for a more user friendly, personal shopping experience. 
-
-![picture](public/images/Screen Shot 2019-10-10 at 2.26.46 AM.png)
+![picture of my app]
+(https://Bamazon.github.com/images/Screen Shot 2019-10-10 at 2.06.59 AM.png)
 
 From there, the user can browse the inventory
 
