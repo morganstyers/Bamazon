@@ -8,7 +8,7 @@ Upon opening Bamazon, the app will ask your name for a more user friendly, perso
 
 
 
-(https://Bamazon.github.com/images/welcome.png)
+(/images/welcome.png)
 
 From there, the user can browse the inventory
 
