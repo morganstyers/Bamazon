@@ -7,21 +7,21 @@ watch its stock, sell, troubleshoot, retain info and keep up with supply and dem
 Upon opening Bamazon, the app will ask your name for a more user friendly, personal shopping experience. 
 
 
-![picture of my app]
-(https://Bamazon.github.com/images/Screen Shot 2019-10-10 at 2.06.59 AM.png)
+
+(https://Bamazon.github.com/images/welcome.png)
 
 From there, the user can browse the inventory
 
-![images](images/Screen Shot 2019-10-10 at 2.06.59 AM.png)
+(https://Bamazon.github.com/images/Inventory.png)
 
 select a product 
 
-![images](images/Screen Shot 2019-10-10 at 2.07.11 AM.png)
+(https://Bamazon.github.com/images/ItemID.png)
 
 specify their needs and be on their merry way.
 
-![images](images/Screen Shot 2019-10-10 at 2.07.24 AM.png)
+(https://Bamazon.github.com/images/checkout.png)
 
 Users are also given an opportunity to rechoose, if their item is out of stock. 
 
-![images](images/Screen Shot 2019-10-10 at 2.16.12 AM.png)
+(https://Bamazon.github.com/images/outofstock.png)
