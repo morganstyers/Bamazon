@@ -1,7 +1,8 @@
 # BAMAZON
 
 **Bamazon is a small scale sales app.**
-**Using node, mysql and inquirer.js, we can create, delete, update and edit a stores inventory, **
+
+**Using node, mysql and inquirer.js, we can create, delete, update and edit a stores inventory, 
 watch its stock, sell, troubleshoot, retain info and keep up with supply and demand all in one interface.**
 
 ***Upon opening Bamazon, the app will ask your name for a more user friendly, personal shopping experience.***
