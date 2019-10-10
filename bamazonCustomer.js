@@ -62,6 +62,8 @@ function app() {
                                 inventory();
                             } else {
                                 var products = data[0];
+                                var total= Math.round(products.price * quantity).toFixed(2);
+
                             }
                             if (quantity <= products.stock_quantity) {
                                 console.log("---------------------------------------------------------------------\n" + '\n');
@@ -72,7 +74,7 @@ function app() {
                                 var updateQueryStr = 'UPDATE products SET stock_quantity = ' + (products.stock_quantity - quantity) + ' WHERE item_id = ' + item;
                                 connection.query(updateQueryStr, function (err, data) {
                                     if (err) throw err;
-                                    console.log('Your order has been sucessfully placed!' + '\n' + '\n' + 'Your total is $' + products.price * quantity)
+                                    console.log('Your order has been sucessfully placed!' + '\n' + '\n' + 'Your total is $' + total);
                                     console.log('\n');
 
                                     console.log("thank you, " + user + "!!")
@@ -94,6 +96,8 @@ function app() {
 
         })
 }
+
+
 
 
 function inventory() {
