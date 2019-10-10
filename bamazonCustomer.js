@@ -15,42 +15,53 @@ inquirer.prompt([
         type: 'input',
         name: 'user',
         message: "Hello! Please enter your username:",
+
     }]).then(name => {
         const user = name.user;
+        console.log("----------------------------------------------------------" + "\n" + "Hello, " + user)
 
-        inquirer.prompt([
-            {
-                name: "invent",
-                message: "hit enter when you are ready to proceed" + inventory()
-            },
+        function next() {
+            console.log(" lets show you the inventory, just press enter when you're done looking and ready to check out!" + "\n" + "\n"),
 
-            {
-                type: 'input',
-                name: 'item_id',
-                message: name.user + " ," + " please enter the Item ID which you would like to purchase.",
-                filter: Number
-            },
-            {
-                type: 'input',
-                name: 'quantity',
-                message: 'How many do you need?',
-                filter: Number
-            }]).then(input => {
+                setTimeout(function () { console.log("\n") + inventory() + "\n" }, 2000);
 
-                var item = input.item_id;
-                var quantity = input.quantity;
+            inquirer.prompt([
+                {
+                    type: "confirm",
+                    name: 'continue',
+                    message: "ready?"
+                },
+                {
+                    type: 'input',
 
-                var queryStr = 'SELECT * FROM products WHERE ?';
+                    name: 'item_id',
+                    message: name.user + " ," + " please enter the Item ID which you would like to purchase.",
+                    filter: Number
+                },
+                {
+                    type: 'input',
+                    name: 'quantity',
+                    message: 'How many do you need?',
+                    filter: Number
 
-                connection.query(queryStr, { item_id: item }, function (err, data) {
-                    if (err) throw err;
-                    if (data.length === 0) {
-                        console.log('ERROR: Invalid Item ID. Please select a valid Item ID.');
-                    }
+                }]).then(input => {
+
+                    var item = input.item_id;
+                    var quantity = input.quantity;
+
+                    var queryStr = 'SELECT * FROM products WHERE ?';
+
+                    connection.query(queryStr, { item_id: item }, function (err, data) {
+                        if (err) throw err;
+                        if (data.length === 0) {
+                            console.log('ERROR: Invalid Item ID. Please select a valid Item ID.');
+                        }
+                    })
                 })
-            })
+        }
+    });
 
-    })
+
 function inventory() {
     queryStr = 'SELECT * FROM products';
     connection.query(queryStr, function (err, data) {
