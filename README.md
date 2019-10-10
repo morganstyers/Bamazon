@@ -8,20 +8,20 @@ Upon opening Bamazon, the app will ask your name for a more user friendly, perso
 
 
 
-(/images/welcome.png)
+![img](./images/welcome.png)
 
 From there, the user can browse the inventory
 
-(https://Bamazon.github.com/images/Inventory.png)
+![img](./images/Inventory.png)
 
 select a product 
 
-(https://Bamazon.github.com/images/ItemID.png)
+![img](./images/ItemID.png)
 
 specify their needs and be on their merry way.
 
-(https://Bamazon.github.com/images/checkout.png)
+![img](./images/checkout.png)
 
 Users are also given an opportunity to rechoose, if their item is out of stock. 
 
-(https://Bamazon.github.com/images/outofstock.png)
+![img](./images/outofstock.png)
