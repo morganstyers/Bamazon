@@ -14,23 +14,22 @@ function app() {
         {
             type: 'input',
             name: 'user',
-            message: "Hello! Please enter your username:",
+            message: '\n'+ "Hello! Please enter your username:",
 
         }]).then(name => {
-
             const user = name.user;
 
-            console.log("----------------------------------------------------------" + "\n" + "Hello, " + user)
-            console.log(" lets show you the inventory, just press enter when you're done looking and ready to check out!" + "\n" + "\n");
+            console.log("\n" + "Hello, " + user + '\n' );
+            console.log("\n"+" lets show you the inventory, just press enter when you're done looking and ready to check out!" + "\n" + "\n");
 
             function start() {
                 inquirer.prompt([
                     {
                         name: 'continue',
-                        message: '\n' + '\n------------------------------------------------------------\n' + '\n'
+                        message: '\n' 
                     },
                     {
-                        name: "checkout? hit enter",
+                        name: "ready for checkout? hit enter",
                         message: inventory()
                     },
                     {
@@ -83,9 +82,9 @@ function app() {
                                 });
                             } else {
                                 console.log('Sorry, that item is all out of stock!' + '\n');
-
-                                inventory();
+                                
                                 start();
+                                name.item_id;
                             }
                         })
                     })
@@ -113,8 +112,7 @@ function inventory() {
             }
         })
     }, 2000)
-    console.log("---------------------------------------------------------------------\n");
-
+    console.log("\n");
 }
 
 app();
