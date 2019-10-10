@@ -6,7 +6,7 @@ watch its stock, sell, troubleshoot, retain info and keep up with supply and dem
 
 Upon opening Bamazon, the app will ask your name for a more user friendly, personal shopping experience. 
 
-![images](images/Screen Shot 2019-10-10 at 2.26.46 AM.png)
+![picture](public/images/Screen Shot 2019-10-10 at 2.26.46 AM.png)
 
 From there, the user can browse the inventory
 
